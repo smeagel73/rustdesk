@@ -21,6 +21,9 @@ env:
   # To make a custom build with your own servers set the below secret values
   RS_PUB_KEY: '${{ secrets.RS_PUB_KEY }}'
   RENDEZVOUS_SERVER: '${{ secrets.RENDEZVOUS_SERVER }}'
+  
+permissions:
+  contents: write
 
 jobs:
   build-for-windows:
